@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titan One", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  color: #212529;
+  background-color: #ff6b6b;
+  background-color: #a5d8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.primary-heading {
+  font-size: 12.8rem;
+}
+
+.timer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 450px;
+  top: 350px;
+}
+
+.input {
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 10rem;
+  width: 20rem;
+  text-align: center;
+  background: none;
+}
+
+input::placeholder {
+  color: inherit;
+  font-family: inherit;
+}
+
+label {
+  font-size: 10rem;
+}
+
+.play-pause {
+  position: absolute;
+  left: 330px;
+  top: 165px;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.s-btn {
+  font-size: 6rem;
+  cursor: pointer;
+  background-color: #212529;
+  color: #fff;
+  padding: 1.2rem;
+  border-radius: 11px;
+  transition: all ease-in 0.3s;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 5.6rem;
+  position: absolute;
+  top: 200px;
+  left: 630px;
+}
+.btn {
+  border: none;
+  font-size: 2.8rem;
+  background-color: #212529;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+  box-shadow: 0rem 1.2rem 2.4rem 0rem rgb(0 0 0 / 10%);
+}
+.btn:hover,
+.s-btn:hover {
+  color: #212529;
+  background-color: #fff;
+  box-shadow: 0rem 1.8rem 3.2rem 0rem rgb(0 0 0 / 10%);
+}
+
+/* Hide arrows in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
